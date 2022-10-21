@@ -9,7 +9,14 @@ word=input()
 lenword=len(word)
 if lenword < 4:
     print(word)
+elif lenword > 3 and word[-2:] == "er":
+    new_word = word.replace("er", "est")
+    print(new_word)
+elif lenword > 3 and word[-3:] == "est":
+    print(word)
 elif lenword > 3:
     print(word + "er")
-if word.endswith("er"):
-    print(word.replace("er", "est"))
+    
+            
+
+    
